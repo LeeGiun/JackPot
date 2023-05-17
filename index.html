@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javaScript_DOM / objectDATE 3</title>
+                  <!-- 날짜 객체 데이터 / 함수 -->
+  <!-- JS -->
+  <script>
+/* 
+    let num = 0
+
+    for(let i = 0; i <= 10; i++){
+      num = Math.random() * (10 - 1) + 1 
+      num = Math.ceil(num) // 소수점 올림함수
+      // 무작위 수를 뽑아내는것
+      document.write(num, '<br/>')
+    }
+ */
+
+  let numbers = [];
+
+while (numbers.length < 6) {
+    let num = Math.floor(Math.random() * 42) + 1;
+    if (!numbers.includes(num)) {
+        numbers.push(num);
+    }
+}
+
+numbers.sort((a, b) => a - b);
+
+document.write(numbers.join(' '));
+
+
+  </script>
+
+
+  <!-- CSS -->
+  <style>
+
+  </style>
+</head>
+
+<!-- HTML -->
+<body>
+  
+</body>
+</html>
